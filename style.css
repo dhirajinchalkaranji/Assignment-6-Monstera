@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Allerta", sans-serif;
+  /* font-family: 'Abel'; */
+}
+
+:root {
+  --header-height: 3rem;
+
+  /*===== Colors =====*/
+  --first-color: #fff;
+  --first-color-second: #466d50;
+  --text-color: #000;
+  --text-color-light: #fff;
+
+  /*===== Font and typography =====*/
+  --body-font: "Allerta", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*===== Font weight =====*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*===== Margenes =====*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /*===== z index =====*/
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* ===========Base============ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--first-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------- Nav bar----------------- */
+
+#navbarMonstera {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+#navMid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navMid h4 {
+  padding: 0 2.2rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
+#navEnd {
+  display: flex;
+}
+
+#navEnd img {
+  padding: 0 1rem;
+}
+
+#midWhole {
+  margin-top: 4rem;
+  display: flex;
+  margin-right: 0px;
+  justify-content: space-between;
+}
+
+#imgMain {
+  position: relative;
+  right: 0;
+  width: 800px;
+  height: 100%;
+}
+
+#midWholePart11 {
+  width: 100%;
+}
+
+#midWholePart11 ul li h1 {
+  font-size: 7rem;
+  font-weight: 800;
+  padding-top: 5rem;
+  display: inline-block;
+}
+
+ul li {
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.only-li {
+  content: "";
+  padding: 0;
+  position: relative;
+  top: -1rem;
+}
+
+#monstera {
+  margin-top: 2rem;
+  position: relative;
+  top: 1rem;
+  font-family: "Kanit", sans-serif;
+}
+
+#description h2 {
+  font-weight: 50;
+  font-size: 1.3rem;
+  position: relative;
+  top: -1rem;
+}
+
+#description h3 {
+  font-weight: 50;
+  font-size: 1.3rem;
+  position: relative;
+  top: -1.5rem;
+}
+
+#midWholePart12 {
+  margin-left: 4rem;
+}
+
+#midWholePart121 {
+  display: flex;
+  padding: 0rem 1rem;
+  background-color: green;
+  align-items: center;
+  width: fit-content;
+  border-radius: 5rem;
+  color: #fff;
+  background: var(--first-color-second);
+}
+
+#midWholePart121 h1 {
+  margin-right: 1rem;
+  font-weight: 200;
+}
+
+#midWholePart122 {
+  position: relative;
+  top: 0.2rem;
+}
+
+#midWholePart122 img {
+  width: 100%;
+  height: 1.3rem;
+}
+
+#midWholePart13 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.midWholePart13Parts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+}
+.midWholePart13Parts img {
+  width: 100%;
+  height: 110px;
+}
+.midWholePart13Parts h4 {
+  margin-left: 0.5rem;
+}
+.midWholePart13Parts p {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
